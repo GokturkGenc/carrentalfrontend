@@ -3,9 +3,8 @@
       Sepet
     </a>
     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a *ngFor="let cartItem of cartItems" class="dropdown-item">{{cartItem.car.carName}}</a></li>
       <li><hr class="dropdown-divider"></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><a class="dropdown-item" routerLink="/cart">Sepete git</a></li>
     </ul>
-  </li>
+</li>

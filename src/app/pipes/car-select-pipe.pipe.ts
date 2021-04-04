@@ -1,11 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { CarComponent } from '../components/car/car.component';
 import { Car } from '../models/car';
 
 @Pipe({
-  name: 'filterPipe'
+  name: 'carSelectPipe'
 })
-export class FilterPipePipe implements PipeTransform {
+export class CarSelectPipePipe implements PipeTransform {
 
   transform(value: Car[], filterText: string): Car[] {
     filterText = filterText?filterText.toLocaleLowerCase():""
